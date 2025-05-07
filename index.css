@@ -154,13 +154,27 @@ footer {
   text-align: center;
   font-size: 14px;
 }
-/*media queries*/
 @media (min-width: 700px) {
   :root {
     --bg-url: url(./bg-desktop.jpg);
   }
   .light {
-    --bg-url: url(./bg-mobile-light.jpg);
+    --bg-url: url(./bg-desktop-light.jpg);
   }
 }
-
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
